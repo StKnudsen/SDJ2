@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/SDJ2.iml" filepath="$PROJECT_DIR$/.idea/SDJ2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson01/e1-1_PrintLettersAndNumbers/Lesson01/e1-1_PrintLettersAndNumbers.iml" filepath="$PROJECT_DIR$/Lesson01/e1-1_PrintLettersAndNumbers/Lesson01/e1-1_PrintLettersAndNumbers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson01/e1-2_RunInsteadOfStart/Lesson01/e1-2_RunInsteadOfStart.iml" filepath="$PROJECT_DIR$/Lesson01/e1-2_RunInsteadOfStart/Lesson01/e1-2_RunInsteadOfStart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson01/e1-3_Constructors/Lesson01/e1-3_Constructors.iml" filepath="$PROJECT_DIR$/Lesson01/e1-3_Constructors/Lesson01/e1-3_Constructors.iml" />
     </modules>
   </component>
 </project>
