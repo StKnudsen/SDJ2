@@ -13,6 +13,8 @@
       <module fileurl="file://$PROJECT_DIR$/Lesson02/e2-1-1_1Counter/Lesson02/e2-1-1_1Counter.iml" filepath="$PROJECT_DIR$/Lesson02/e2-1-1_1Counter/Lesson02/e2-1-1_1Counter.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson02/e2-1-2_2Counters/Lesson02/e2-1-2_2Counters.iml" filepath="$PROJECT_DIR$/Lesson02/e2-1-2_2Counters/Lesson02/e2-1-2_2Counters.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson02/e2-1-3_TryLock/Lesson02/e2-1-3_TryLock.iml" filepath="$PROJECT_DIR$/Lesson02/e2-1-3_TryLock/Lesson02/e2-1-3_TryLock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson02/e2-2_SynchronizedList/Lesson02/e2-2_SynchronizedList.iml" filepath="$PROJECT_DIR$/Lesson02/e2-2_SynchronizedList/Lesson02/e2-2_SynchronizedList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson02/e2-3_SimulatingTemperatureInARoom/Lesson02/e2-3_SimulatingTemperatureInARoom.iml" filepath="$PROJECT_DIR$/Lesson02/e2-3_SimulatingTemperatureInARoom/Lesson02/e2-3_SimulatingTemperatureInARoom.iml" />
     </modules>
   </component>
 </project>
