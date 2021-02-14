@@ -18,6 +18,7 @@
       <module fileurl="file://$PROJECT_DIR$/Lesson02/e2-3_SimulatingTemperatureInARoom/Lesson02/e2-3_SimulatingTemperatureInARoom.iml" filepath="$PROJECT_DIR$/Lesson02/e2-3_SimulatingTemperatureInARoom/Lesson02/e2-3_SimulatingTemperatureInARoom.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson02/e2-4_IncrementDecrement/Lesson02/e2-4_IncrementDecrement.iml" filepath="$PROJECT_DIR$/Lesson02/e2-4_IncrementDecrement/Lesson02/e2-4_IncrementDecrement.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson03/e3-1_TrafficLight/Lesson03/e3-1_TrafficLight.iml" filepath="$PROJECT_DIR$/Lesson03/e3-1_TrafficLight/Lesson03/e3-1_TrafficLight.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson03/e3-2_TrafficLightWithPropertyChangeSupport/Lesson03/e3-2_TrafficLightWithPropertyChangeSupport.iml" filepath="$PROJECT_DIR$/Lesson03/e3-2_TrafficLightWithPropertyChangeSupport/Lesson03/e3-2_TrafficLightWithPropertyChangeSupport.iml" />
     </modules>
   </component>
 </project>
