@@ -20,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/Lesson03/e3-1_TrafficLight/Lesson03/e3-1_TrafficLight.iml" filepath="$PROJECT_DIR$/Lesson03/e3-1_TrafficLight/Lesson03/e3-1_TrafficLight.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson03/e3-2_TrafficLightWithPropertyChangeSupport/Lesson03/e3-2_TrafficLightWithPropertyChangeSupport.iml" filepath="$PROJECT_DIR$/Lesson03/e3-2_TrafficLightWithPropertyChangeSupport/Lesson03/e3-2_TrafficLightWithPropertyChangeSupport.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson03/e3-3_DoctorsWaitingRoom/Lesson03/e3-3_DoctorsWaitingRoom.iml" filepath="$PROJECT_DIR$/Lesson03/e3-3_DoctorsWaitingRoom/Lesson03/e3-3_DoctorsWaitingRoom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson03/e3-4_SoccerMatch/Lesson03/e3-4_SoccerMatch.iml" filepath="$PROJECT_DIR$/Lesson03/e3-4_SoccerMatch/Lesson03/e3-4_SoccerMatch.iml" />
     </modules>
   </component>
 </project>
