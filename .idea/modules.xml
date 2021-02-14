@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/Lesson01/e1-3_Constructors/Lesson01/e1-3_Constructors.iml" filepath="$PROJECT_DIR$/Lesson01/e1-3_Constructors/Lesson01/e1-3_Constructors.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson01/e1-4_Sleep/Lesson01/e1-4_Sleep.iml" filepath="$PROJECT_DIR$/Lesson01/e1-4_Sleep/Lesson01/e1-4_Sleep.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson01/e1-5_ThreadSerializationUsingJoin/Lesson01/e1-5_ThreadSerializationUsingJoin.iml" filepath="$PROJECT_DIR$/Lesson01/e1-5_ThreadSerializationUsingJoin/Lesson01/e1-5_ThreadSerializationUsingJoin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson01/e1-6_SleepingBear/Lesson01/e1-6_SleepingBear.iml" filepath="$PROJECT_DIR$/Lesson01/e1-6_SleepingBear/Lesson01/e1-6_SleepingBear.iml" />
     </modules>
   </component>
 </project>
