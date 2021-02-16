@@ -1,4 +1,4 @@
-package view.temperature;
+package core;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -6,6 +6,7 @@ import javafx.scene.Scene;
 import javafx.scene.layout.Region;
 import javafx.stage.Stage;
 import mediator.TemperatureModel;
+import view.temperature.TemperatureViewController;
 
 public class ViewHandler extends Application
 {
@@ -15,9 +16,11 @@ public class ViewHandler extends Application
   private TemperatureViewController temperatureViewController;
   private TemperatureModel model;
 
-  public ViewHandler(TemperatureModel model)
+  private ViewModelFactory vmf;
+
+  public ViewHandler(ViewModelFactory vmf)
   {
-    this.model = model;
+    this.vmf = vmf;
   }
 
   public void start(Stage primaryStage)
@@ -60,7 +63,7 @@ public class ViewHandler extends Application
         loader.setLocation(getClass().getResource(fxmlFile));
         Region root = loader.load();
         temperatureViewController = loader.getController();
-        temperatureViewController.init(this, model, root);
+        temperatureViewController.init(this, vmf.getTemperatureVM(), root);
       }
       catch (Exception e)
       {

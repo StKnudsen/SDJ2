@@ -1,5 +1,6 @@
 package view.temperature;
 
+import core.ViewHandler;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -17,12 +18,13 @@ public class TemperatureViewController implements PropertyChangeListener
    @FXML private Label outputLabel;
    @FXML private TextField filterField;
    @FXML private Label filterLabel;
-
    private ViewHandler viewHandler;
-   private TemperatureModel model;
+   private TemperatureViewModel viewModel;
+
+   //private TemperatureModel model;
    private Region root;
    private String thermometerId;
-   private boolean hasListener;
+   //private boolean hasListener;
 
    private PropertyChangeSupport propertyChangeSupport;
 
@@ -30,13 +32,13 @@ public class TemperatureViewController implements PropertyChangeListener
    {
    }
 
-   public void init(ViewHandler viewHandler, TemperatureModel model, Region root)
+   public void init(ViewHandler viewHandler, TemperatureViewModel viewModel, Region root)
    {
       this.viewHandler = viewHandler;
-      this.model = model;
+      this.viewModel = viewModel;
       this.root = root;
       thermometerId = null;
-      hasListener = false;
+      //hasListener = false;
    }
 
    public void reset()
@@ -51,21 +53,26 @@ public class TemperatureViewController implements PropertyChangeListener
 
    @FXML private void updateButtonPressed()
    {
-      if (hasListener)
+      viewModel.getValue();
+      /*if (hasListener)
       {
-         model.removeListener("AddTemperature", this);
+         //model.removeListener("AddTemperature", this);
+         viewModel.removeListener("AddTemperature", this);
          hasListener = false;
       }
       else
       {
-         model.addListener("AddTemperature", this);
+         //model.addListener("AddTemperature", this);
+         viewModel.addListener("AddTemperature", this);
          hasListener = true;
-      }
+      }*/
    }
 
    @FXML private void onFilter()
    {
-      String oldValue = filterLabel.getText();
+      viewModel.updateThermometerId();
+
+      /*String oldValue = filterLabel.getText();
       if (oldValue.equals("All"))
       {
          oldValue = null;
@@ -80,14 +87,15 @@ public class TemperatureViewController implements PropertyChangeListener
       {
          filterLabel.setText(thermometerId);
       }
-      filterField.setText(null);
+      filterField.setText(null);*/
       updateButtonPressed();
    }
 
    @Override public void propertyChange(PropertyChangeEvent evt)
    {
       Platform.runLater(() -> {
-         Temperature t = model.getLastInsertedTemperature(thermometerId);
+         //Temperature t = model.getLastInsertedTemperature(thermometerId);
+         Temperature t = viewModel.getLastInsertedTemperature(thermometerId);
          if (t != null)
          {
             outputLabel.setText(t.toString());

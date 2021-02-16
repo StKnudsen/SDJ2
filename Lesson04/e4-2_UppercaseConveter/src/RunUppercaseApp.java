@@ -4,6 +4,6 @@ public class RunUppercaseApp
 {
   public static void main(String[] args)
   {
-    //Application.launch(RunUppercaseApp.class);
+    Application.launch(UppercaseApp.class);
   }
 }
