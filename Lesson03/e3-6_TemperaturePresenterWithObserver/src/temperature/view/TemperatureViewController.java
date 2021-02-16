@@ -64,7 +64,7 @@ public class TemperatureViewController implements PropertyChangeListener
          oldValue = null;
       }
       thermometerId = filterField.getText();
-      if (thermometerId.isEmpty())
+      if (thermometerId == null || thermometerId.isEmpty()) // Updated this line, see Itslearning.
       {
          thermometerId = null;
          filterLabel.setText("All");
