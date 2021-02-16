@@ -1,3 +1,5 @@
+package external;
+
 import mediator.TemperatureModel;
 
 public class Termometer implements Runnable

@@ -1,6 +1,6 @@
-package temperature.mediator;
+package mediator;
 
-import temperature.model.Temperature;
+import model.Temperature;
 
 public interface TemperatureModel extends NamedPropertyChangeSubject
 {

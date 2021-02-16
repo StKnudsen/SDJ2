@@ -1,7 +1,7 @@
-package temperature.mediator;
+package mediator;
 
-import temperature.model.Temperature;
-import temperature.model.TemperatureList;
+import model.Temperature;
+import model.TemperatureList;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;

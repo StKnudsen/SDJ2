@@ -1,4 +1,4 @@
-package temperature.mediator;
+package mediator;
 
 import java.beans.PropertyChangeListener;
 

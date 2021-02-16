@@ -1,12 +1,12 @@
-package temperature.view;
+package view.temperature;
 
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Region;
-import temperature.mediator.TemperatureModel;
-import temperature.model.Temperature;
+import mediator.TemperatureModel;
+import model.Temperature;
 
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
