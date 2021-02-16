@@ -1,5 +1,6 @@
 package temperature.view;
 
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -9,6 +10,7 @@ import temperature.model.Temperature;
 
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
 
 public class TemperatureViewController implements PropertyChangeListener
 {
@@ -20,6 +22,9 @@ public class TemperatureViewController implements PropertyChangeListener
    private TemperatureModel model;
    private Region root;
    private String thermometerId;
+   private boolean hasListener;
+
+   private PropertyChangeSupport propertyChangeSupport;
 
    public TemperatureViewController()
    {
@@ -31,6 +36,7 @@ public class TemperatureViewController implements PropertyChangeListener
       this.model = model;
       this.root = root;
       thermometerId = null;
+      hasListener = false;
    }
 
    public void reset()
@@ -45,14 +51,15 @@ public class TemperatureViewController implements PropertyChangeListener
 
    @FXML private void updateButtonPressed()
    {
-      Temperature t = model.getLastInsertedTemperature(thermometerId);
-      if (t != null)
+      if (hasListener)
       {
-         outputLabel.setText(t.toString());
+         model.removeListener("AddTemperature", this);
+         hasListener = false;
       }
       else
       {
-         outputLabel.setText("No data");
+         model.addListener("AddTemperature", this);
+         hasListener = true;
       }
    }
 
@@ -79,6 +86,16 @@ public class TemperatureViewController implements PropertyChangeListener
 
    @Override public void propertyChange(PropertyChangeEvent evt)
    {
-
+      Platform.runLater(() -> {
+         Temperature t = model.getLastInsertedTemperature(thermometerId);
+         if (t != null)
+         {
+            outputLabel.setText(t.toString());
+         }
+         else
+         {
+            outputLabel.setText("No data");
+         }
+      });
    }
 }
