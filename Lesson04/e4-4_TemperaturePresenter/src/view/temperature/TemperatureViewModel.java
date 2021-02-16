@@ -1,10 +1,9 @@
 package view.temperature;
 
-import javafx.beans.property.DoubleProperty;
-import javafx.beans.property.SimpleDoubleProperty;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
+import javafx.beans.property.*;
+import javafx.beans.value.ObservableValue;
 import mediator.TemperatureModel;
+import model.Temperature;
 
 public class TemperatureViewModel
 {
@@ -29,19 +28,19 @@ public class TemperatureViewModel
   {
     if (hasListener)
     {
-      model.removeListener("AddTemperature", this);
+      //model.removeListener("AddTemperature", this);
       hasListener = false;
     }
     else
     {
-      model.addListener("AddTemperature", this);
+      //model.addListener("AddTemperature", this);
       hasListener = true;
     }
   }
 
   public void updateThermometerId()
   {
-    String oldValue = filterLabel.getText();
+    /*String oldValue = filterLabel.getText();
     if (oldValue.equals("All"))
     {
       oldValue = null;
@@ -56,6 +55,26 @@ public class TemperatureViewModel
     {
       filterLabel.setText(thermometerId);
     }
-    filterField.setText(null);
+    filterField.setText(null);*/
+  }
+
+  public DoubleProperty outputLabelProperty()
+  {
+    return temperature;
+  }
+
+  public StringProperty filterLabelProperty()
+  {
+    return id;
+  }
+
+  public StringProperty filterFieldProperty()
+  {
+    return id;
+  }
+
+  public Temperature getLastInsertedTemperature(String thermometerId)
+  {
+    return model.getLastInsertedTemperature(thermometerId);
   }
 }

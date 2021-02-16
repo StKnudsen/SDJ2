@@ -10,7 +10,7 @@ public class ViewModelFactory
   public ViewModelFactory(ModelFactory mf)
   {
     this.mf = mf;
-    temperatureVM = new TemperatureViewModel();
+    temperatureVM = new TemperatureViewModel(mf.getTemperatureModel());
   }
 
   public TemperatureViewModel getTemperatureVM()

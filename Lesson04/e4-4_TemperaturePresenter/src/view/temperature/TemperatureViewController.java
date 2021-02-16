@@ -6,7 +6,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Region;
-import mediator.TemperatureModel;
 import model.Temperature;
 
 import java.beans.PropertyChangeEvent;
@@ -18,6 +17,7 @@ public class TemperatureViewController implements PropertyChangeListener
    @FXML private Label outputLabel;
    @FXML private TextField filterField;
    @FXML private Label filterLabel;
+
    private ViewHandler viewHandler;
    private TemperatureViewModel viewModel;
 
@@ -39,6 +39,9 @@ public class TemperatureViewController implements PropertyChangeListener
       this.root = root;
       thermometerId = null;
       //hasListener = false;
+      outputLabel.textProperty().bind(viewModel.outputLabelProperty().asString());
+      filterField.textProperty().bindBidirectional(viewModel.filterFieldProperty());
+      filterLabel.textProperty().bind(viewModel.filterLabelProperty());
    }
 
    public void reset()
