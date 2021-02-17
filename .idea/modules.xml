@@ -28,6 +28,7 @@
       <module fileurl="file://$PROJECT_DIR$/Lesson05/e5-1_ExpandTimestampWithObserver/Lesson05/e5-1_ExpandTimestampWithObserver.iml" filepath="$PROJECT_DIR$/Lesson05/e5-1_ExpandTimestampWithObserver/Lesson05/e5-1_ExpandTimestampWithObserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson05/e5-2_TemperatureWithObserver/Lesson05/e5-2_TemperatureWithObserver.iml" filepath="$PROJECT_DIR$/Lesson05/e5-2_TemperatureWithObserver/Lesson05/e5-2_TemperatureWithObserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson05/e5-3_TaskList/Lesson05/e5-3_TaskList.iml" filepath="$PROJECT_DIR$/Lesson05/e5-3_TaskList/Lesson05/e5-3_TaskList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson06/e6-1_Phone/Lesson06/e6-1_Phone.iml" filepath="$PROJECT_DIR$/Lesson06/e6-1_Phone/Lesson06/e6-1_Phone.iml" />
     </modules>
   </component>
 </project>
