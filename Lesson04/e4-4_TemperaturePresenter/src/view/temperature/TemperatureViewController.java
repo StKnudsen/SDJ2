@@ -24,7 +24,7 @@ public class TemperatureViewController implements PropertyChangeListener
    //private TemperatureModel model;
    private Region root;
    private String thermometerId;
-   //private boolean hasListener;
+   private boolean hasListener;
 
    private PropertyChangeSupport propertyChangeSupport;
 
@@ -56,7 +56,7 @@ public class TemperatureViewController implements PropertyChangeListener
 
    @FXML private void updateButtonPressed()
    {
-      viewModel.getValue();
+      viewModel.update();
       /*if (hasListener)
       {
          //model.removeListener("AddTemperature", this);

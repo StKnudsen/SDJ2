@@ -12,10 +12,8 @@ public class TemperatureApp extends Application
   public void start(Stage primaryStage)
   {
     // Model
-    //TemperatureModel temperatureModel = new TemperatureModelManager();
     ModelFactory modelFactory = new ModelFactory();
     ViewModelFactory viewModelFactory = new ViewModelFactory(modelFactory);
-    //ViewHandler viewHandler = new ViewHandler(viewModelFactory);
 
     // external.termometer
     Thread t1 = new Thread(new Termometer(modelFactory.getTemperatureModel(), "t1", 2, 1));

@@ -24,8 +24,9 @@ public class TemperatureViewModel
     model.getLastInsertedTemperature(id.getValue());
   }
 
-  public void getValue()
+  public void update()
   {
+    //
     if (hasListener)
     {
       //model.removeListener("AddTemperature", this);
