@@ -12,7 +12,8 @@ public class ClientMain1 {
         Socket socket = new Socket("127.0.0.1", 1235);
         PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
         BufferedReader in = new BufferedReader(
-                new InputStreamReader(socket.getInputStream()));
+                new InputStreamReader(socket.getInputStream())
+        );
 
         String message = in.readLine();
         System.out.println(message);
