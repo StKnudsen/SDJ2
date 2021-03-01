@@ -6,7 +6,9 @@ import java.net.Socket;
 
 public class Server
 {
-    public void start() throws IOException, ClassNotFoundException
+    private ConnectionPool connectionPool = new ConnectionPool();
+
+    public void start() throws IOException
     {
         System.out.println("Starting server ...");
 
@@ -18,7 +20,9 @@ public class Server
             {
                 Socket socket = serverSocket.accept();
 
-                Thread thread = new Thread(new ServerSocketHandler(socket));
+                ServerSocketHandler serverSocketHandler = new ServerSocketHandler(socket, connectionPool);
+                connectionPool.addHandler(serverSocketHandler);
+                Thread thread = new Thread(serverSocketHandler);
                 thread.start();
             }
         }

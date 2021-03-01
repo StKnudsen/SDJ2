@@ -1,33 +1,46 @@
 package client;
 
-import transferobjects.Message;
-
 import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
 import java.net.Socket;
 import java.util.Scanner;
 
 public class Client
 {
+    private ClientSocketHandler clientSocketHandler;
+    private Thread thread;
+
+    public Client()
+    {
+
+    }
 
     public void start() throws IOException {
         try (
-            Socket socket = new Socket("127.0.0.1", 1335);
-            ObjectOutputStream out = new ObjectOutputStream(socket.getOutputStream());
-            ObjectInputStream in =  new ObjectInputStream(socket.getInputStream());
+            Socket socket = new Socket("127.0.0.1", 1335)
             )
         {
-            Message message = (Message)in.readObject();
-            System.out.println(message.getText());
-            String name = new Scanner(System.in).nextLine();
-            out.writeObject(new Message(name));
-            message = (Message) in.readObject();
-            System.out.println(message.getText());
+            this.clientSocketHandler = new ClientSocketHandler(this, socket);
+            Thread thread = new Thread(clientSocketHandler);
+            thread.setDaemon(true);
+            thread.start();
+            //Message message = (Message)in.readObject();
+            //System.out.println(message.getText());
+            while (true)
+            {
+                String messageFromClient = new Scanner(System.in).nextLine();
+                clientSocketHandler.sendMessage(messageFromClient);
+            }
         }
-        catch (ClassNotFoundException e)
+    }
+
+    public void messageReceived(String message)
+    {
+        if (message.equalsIgnoreCase("exit"))
         {
-            e.printStackTrace();
+            // Should be made with a boolean instead...
+            System.exit(0);
         }
+
+        System.out.println(message);
     }
 }
