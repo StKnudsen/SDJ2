@@ -7,12 +7,15 @@ import java.util.Scanner;
 public class Client
 {
     private ClientSocketHandler clientSocketHandler;
-    private Thread thread;
+    //private Thread thread;
 
+    /*
     public Client()
     {
 
     }
+
+     */
 
     public void start() throws IOException {
         try (
@@ -29,18 +32,16 @@ public class Client
             {
                 String messageFromClient = new Scanner(System.in).nextLine();
                 clientSocketHandler.sendMessage(messageFromClient);
+                if (messageFromClient.equalsIgnoreCase("exit"))
+                {
+                    break;
+                }
             }
         }
     }
 
     public void messageReceived(String message)
     {
-        if (message.equalsIgnoreCase("exit"))
-        {
-            // Should be made with a boolean instead...
-            System.exit(0);
-        }
-
         System.out.println(message);
     }
 }

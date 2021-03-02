@@ -29,14 +29,14 @@ public class ServerSocketHandler implements Runnable
     try
     {
       System.out.println("Client connected from " + socket.getInetAddress().getHostAddress() + " " + socket.getLocalPort());
-      //out.writeObject(new Message("Hello from server. Write your name"));
+
       while (true)
       {
         String messageFromClient = ((Message) in.readObject()).getText();
 
         if (messageFromClient.equalsIgnoreCase("exit"))
         {
-          connectionPool.remove(this);
+          connectionPool.removeHandler(this);
           break;
         }
         connectionPool.broadcastMessage(messageFromClient);

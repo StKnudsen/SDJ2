@@ -17,7 +17,7 @@ public class ConnectionPool
     connections.add(serverSocketHandler);
   }
 
-  public void remove(ServerSocketHandler serverSocketHandler)
+  public void removeHandler(ServerSocketHandler serverSocketHandler)
   {
     connections.remove(serverSocketHandler);
   }

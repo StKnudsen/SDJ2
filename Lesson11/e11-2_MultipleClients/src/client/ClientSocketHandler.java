@@ -12,12 +12,12 @@ public class ClientSocketHandler implements Runnable
   private ObjectOutputStream out;
   private ObjectInputStream in;
   private Client client;
-  private Socket socket;
+  //private Socket socket;
 
   public ClientSocketHandler(Client client, Socket socket) throws IOException
   {
     this.client = client;
-    this.socket = socket;
+    //this.socket = socket;
 
     out = new ObjectOutputStream(socket.getOutputStream());
     in =  new ObjectInputStream(socket.getInputStream());
