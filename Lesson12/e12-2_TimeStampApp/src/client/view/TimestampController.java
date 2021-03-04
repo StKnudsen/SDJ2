@@ -3,7 +3,7 @@ package client.view;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
-import viewmodel.TimestampViewModel;
+import client.viewmodel.TimestampViewModel;
 //import viewmodel.ViewModelFactory;
 
 public class TimestampController {

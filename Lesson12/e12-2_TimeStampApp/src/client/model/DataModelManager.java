@@ -1,6 +1,7 @@
 package client.model;
 
 import client.network.Client;
+import shared.PropertyChangeSubject;
 
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
@@ -17,9 +18,9 @@ public class DataModelManager implements DataModel, PropertyChangeSubject
         propertyChangeSupport = new PropertyChangeSupport(this);
         this.client = client;
 
-        this.client.startClient();
+        client.startClient();
 
-        this.addPropertyChangeListener("updated", this::updated);
+        client.addPropertyChangeListener("updated", this::updated);
     }
 
     private void updated(PropertyChangeEvent event)

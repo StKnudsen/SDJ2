@@ -3,8 +3,8 @@ package client.viewmodel;
 import javafx.application.Platform;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
-import model.DataModel;
-import model.PropertyChangeSubject;
+import client.model.DataModel;
+import shared.PropertyChangeSubject;
 
 import java.beans.PropertyChangeEvent;
 import java.util.Date;

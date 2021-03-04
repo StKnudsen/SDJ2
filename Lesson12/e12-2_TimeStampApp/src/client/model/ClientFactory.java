@@ -6,6 +6,11 @@ import client.network.SocketClient;
 public class ClientFactory
 {
   private static ClientFactory instance;
+  private Client client;
+
+  public ClientFactory()
+  {
+  }
 
   static {
     instance = new ClientFactory();
@@ -16,15 +21,9 @@ public class ClientFactory
     return instance;
   }
 
-  private Client client;
-
-  public ClientFactory()
-  {
-  }
-
   public Client getClient()
   {
-    if(client == null)
+    if (client == null)
     {
       client = new SocketClient();
     }

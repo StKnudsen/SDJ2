@@ -1,6 +1,6 @@
 package client.network;
 
-import client.model.PropertyChangeSubject;
+import shared.PropertyChangeSubject;
 
 import java.util.Date;
 
