@@ -28,6 +28,11 @@
       <module fileurl="file://$PROJECT_DIR$/Lesson12/e12-1-1_SocketClient/Lesson12/e12-1-1_SocketClient.iml" filepath="$PROJECT_DIR$/Lesson12/e12-1-1_SocketClient/Lesson12/e12-1-1_SocketClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson12/e12-1-2_ModelOnClient/Lesson12/e12-1-2_ModelOnClient.iml" filepath="$PROJECT_DIR$/Lesson12/e12-1-2_ModelOnClient/Lesson12/e12-1-2_ModelOnClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson12/e12-2_TimeStampApp/Lesson12/e12-2_TimeStampApp.iml" filepath="$PROJECT_DIR$/Lesson12/e12-2_TimeStampApp/Lesson12/e12-2_TimeStampApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson16/e16-2-1_Clock/Lesson16/e16-2-1_Clock.iml" filepath="$PROJECT_DIR$/Lesson16/e16-2-1_Clock/Lesson16/e16-2-1_Clock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson16/e16-2-1a_Clock/Lesson16/e16-2-1a_Clock.iml" filepath="$PROJECT_DIR$/Lesson16/e16-2-1a_Clock/Lesson16/e16-2-1a_Clock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson17/e17-1_PrintingMessages/Lesson17/e17-1_PrintingMessages.iml" filepath="$PROJECT_DIR$/Lesson17/e17-1_PrintingMessages/Lesson17/e17-1_PrintingMessages.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson17/e17-2_Echo/Lesson17/e17-2_Echo.iml" filepath="$PROJECT_DIR$/Lesson17/e17-2_Echo/Lesson17/e17-2_Echo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson17/e17-3_MultipleBridges/Lesson17/e17-3_MultipleBridges.iml" filepath="$PROJECT_DIR$/Lesson17/e17-3_MultipleBridges/Lesson17/e17-3_MultipleBridges.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson02/e2-1-1_1Counter/Lesson02/e2-1-1_1Counter.iml" filepath="$PROJECT_DIR$/Lesson02/e2-1-1_1Counter/Lesson02/e2-1-1_1Counter.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson02/e2-1-2_2Counters/Lesson02/e2-1-2_2Counters.iml" filepath="$PROJECT_DIR$/Lesson02/e2-1-2_2Counters/Lesson02/e2-1-2_2Counters.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson02/e2-1-3_TryLock/Lesson02/e2-1-3_TryLock.iml" filepath="$PROJECT_DIR$/Lesson02/e2-1-3_TryLock/Lesson02/e2-1-3_TryLock.iml" />
