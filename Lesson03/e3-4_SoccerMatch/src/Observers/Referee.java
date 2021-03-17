@@ -7,11 +7,6 @@ public class Referee implements PropertyChangeListener
 {
   @Override public void propertyChange(PropertyChangeEvent evt)
   {
-    react(evt);
-  }
-
-  private void react(PropertyChangeEvent evt)
-  {
     if (evt.getPropertyName().equals("DreamTeamRoughTackle"))
     {
       System.out.println("Referee gives Dream Team a yellow card for a rough tackle.");

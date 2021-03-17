@@ -16,6 +16,7 @@ public class ServerMain
     Registry registry = LocateRegistry.createRegistry(Utils.PORT_NR);
     registry.bind(Utils.SERVER, server);
 
-    System.out.println("The hamsters have been working hard and the server is now ready!");
+    System.out.println(
+        "The hamsters have been working hard and the server is now ready!");
   }
 }

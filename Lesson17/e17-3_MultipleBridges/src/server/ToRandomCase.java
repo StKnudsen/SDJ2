@@ -20,7 +20,9 @@ public class ToRandomCase implements IToRandomCase
 
     for (int i = 0; i < charArray.length; i++)
     {
-      result += Math.random() < 0.5 ? (charArray[i] + "").toUpperCase() : (charArray[i] + "").toLowerCase();
+      result += Math.random() < 0.5 ?
+          (charArray[i] + "").toUpperCase() :
+          (charArray[i] + "").toLowerCase();
     }
 
     return result;

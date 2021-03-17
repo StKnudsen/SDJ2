@@ -7,11 +7,6 @@ public class DreamTeamFan implements PropertyChangeListener
 {
   @Override public void propertyChange(PropertyChangeEvent evt)
   {
-    react(evt);
-  }
-
-  private void react(PropertyChangeEvent evt)
-  {
     if (evt.getPropertyName().equals("DreamTeamScored"))
     {
       System.out.println(" ... Dream Team fans: YEEEAAH!");

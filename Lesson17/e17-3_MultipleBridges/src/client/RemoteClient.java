@@ -12,15 +12,19 @@ public class RemoteClient
 {
   IStringChangingServer stringChangingServer;
 
-  public RemoteClient() {}
+  public RemoteClient()
+  {
+  }
 
   public void startClient() throws RemoteException, NotBoundException
   {
     Registry registry = LocateRegistry.getRegistry("localhost", Utils.PORT_NR);
-    stringChangingServer = (IStringChangingServer) registry.lookup(Utils.SERVER);
+    stringChangingServer = (IStringChangingServer) registry
+        .lookup(Utils.SERVER);
   }
 
-  public void changeToUpperCase(String arg) {
+  public void changeToUpperCase(String arg)
+  {
     try
     {
       System.out.println(stringChangingServer.getUpperCase().toUpperCase(arg));
@@ -31,10 +35,12 @@ public class RemoteClient
     }
   }
 
-  public void changeToRandomCase(String arg) {
+  public void changeToRandomCase(String arg)
+  {
     try
     {
-      System.out.println(stringChangingServer.getRandomCase().toRandomCase(arg));
+      System.out
+          .println(stringChangingServer.getRandomCase().toRandomCase(arg));
     }
     catch (RemoteException e)
     {

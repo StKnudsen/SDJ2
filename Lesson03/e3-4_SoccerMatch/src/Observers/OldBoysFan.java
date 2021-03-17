@@ -5,13 +5,7 @@ import java.beans.PropertyChangeListener;
 
 public class OldBoysFan implements PropertyChangeListener
 {
-
   @Override public void propertyChange(PropertyChangeEvent evt)
-  {
-    react(evt);
-  }
-
-  private void react(PropertyChangeEvent evt)
   {
     if (evt.getPropertyName().equals("OldBoysScored"))
     {
@@ -23,5 +17,4 @@ public class OldBoysFan implements PropertyChangeListener
       System.out.println(" ... Old Boys fans: BUUUUUHH!");
     }
   }
-
 }

@@ -15,11 +15,6 @@ public class ScoreBoard implements PropertyChangeListener
 
   @Override public void propertyChange(PropertyChangeEvent evt)
   {
-    react(evt);
-  }
-
-  private void react(PropertyChangeEvent evt)
-  {
     if (evt.getPropertyName().equals("OldBoysScored"))
     {
       oldBoysScore++;
