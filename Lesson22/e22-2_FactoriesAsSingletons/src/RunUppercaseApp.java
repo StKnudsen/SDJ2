@@ -1,11 +1,9 @@
-package core;
-
 import javafx.application.Application;
 
-public class RunTaskListApp
+public class RunUppercaseApp
 {
   public static void main(String[] args)
   {
-    Application.launch(TaskListApp.class);
+    Application.launch(UppercaseApp.class);
   }
 }

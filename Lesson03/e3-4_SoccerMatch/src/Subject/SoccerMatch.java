@@ -82,6 +82,6 @@ public class SoccerMatch implements PropertyChangeSubject
   @Override public void addPropertyChangeListener(
       PropertyChangeListener listener)
   {
-    propertyChangeSupport.addPropertyChangeListener(listener);
+    propertyChangeSupport.addPropertyChangeListener("text", listener);
   }
 }

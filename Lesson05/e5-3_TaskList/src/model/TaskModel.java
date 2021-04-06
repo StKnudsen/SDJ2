@@ -4,7 +4,7 @@ import util.PropertyChangeSubject;
 
 public interface TaskModel extends PropertyChangeSubject
 {
-  public void addTask(String owner, String desc);
+  public void addTask(String owner, String description);
 
-  public Task getTask();
+  public Task getNextTask();
 }

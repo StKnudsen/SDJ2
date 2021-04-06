@@ -4,7 +4,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import view.add.AddTaskController;
-import view.all.NextTaskController;
+import view.remove.NextTaskController;
+import view.all.AllTasksController;
 
 public class ViewHandler
 {
@@ -16,6 +17,7 @@ public class ViewHandler
   private ViewModelFactory viewModelFactory;
 
   private AddTaskController addTaskController;
+  private AllTasksController allTasksController;
   private NextTaskController nextTaskController;
 
   public ViewHandler(ViewModelFactory viewModelFactory)

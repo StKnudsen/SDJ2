@@ -28,7 +28,6 @@
       <module fileurl="file://$PROJECT_DIR$/Lesson12/e12-1-2_ModelOnClient/Lesson12/e12-1-2_ModelOnClient.iml" filepath="$PROJECT_DIR$/Lesson12/e12-1-2_ModelOnClient/Lesson12/e12-1-2_ModelOnClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson12/e12-2_TimeStampApp/Lesson12/e12-2_TimeStampApp.iml" filepath="$PROJECT_DIR$/Lesson12/e12-2_TimeStampApp/Lesson12/e12-2_TimeStampApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson16/e16-2-1_Clock/Lesson16/e16-2-1_Clock.iml" filepath="$PROJECT_DIR$/Lesson16/e16-2-1_Clock/Lesson16/e16-2-1_Clock.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Lesson16/e16-2-1a_Clock/Lesson16/e16-2-1a_Clock.iml" filepath="$PROJECT_DIR$/Lesson16/e16-2-1a_Clock/Lesson16/e16-2-1a_Clock.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson17/e17-1_PrintingMessages/Lesson17/e17-1_PrintingMessages.iml" filepath="$PROJECT_DIR$/Lesson17/e17-1_PrintingMessages/Lesson17/e17-1_PrintingMessages.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson17/e17-2_Echo/Lesson17/e17-2_Echo.iml" filepath="$PROJECT_DIR$/Lesson17/e17-2_Echo/Lesson17/e17-2_Echo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson17/e17-3_MultipleBridges/Lesson17/e17-3_MultipleBridges.iml" filepath="$PROJECT_DIR$/Lesson17/e17-3_MultipleBridges/Lesson17/e17-3_MultipleBridges.iml" />
@@ -39,6 +38,12 @@
       <module fileurl="file://$PROJECT_DIR$/Lesson02/e2-3-1_TwoThermometers/Lesson02/e2-3-1_TwoThermometers.iml" filepath="$PROJECT_DIR$/Lesson02/e2-3-1_TwoThermometers/Lesson02/e2-3-1_TwoThermometers.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson02/e2-3_SimulatingTemperatureInARoom/Lesson02/e2-3_SimulatingTemperatureInARoom.iml" filepath="$PROJECT_DIR$/Lesson02/e2-3_SimulatingTemperatureInARoom/Lesson02/e2-3_SimulatingTemperatureInARoom.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson02/e2-4_IncrementDecrement/Lesson02/e2-4_IncrementDecrement.iml" filepath="$PROJECT_DIR$/Lesson02/e2-4_IncrementDecrement/Lesson02/e2-4_IncrementDecrement.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson22/e22-1-1_SingletonLogging/Lesson22/e22-1-1_SingletonLogging.iml" filepath="$PROJECT_DIR$/Lesson22/e22-1-1_SingletonLogging/Lesson22/e22-1-1_SingletonLogging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson22/e22-1-2_ThreadSafe/Lesson22/e22-1-2_ThreadSafe.iml" filepath="$PROJECT_DIR$/Lesson22/e22-1-2_ThreadSafe/Lesson22/e22-1-2_ThreadSafe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson22/e22-1-3_UsingLogger/Lesson22/e22-1-3_UsingLogger.iml" filepath="$PROJECT_DIR$/Lesson22/e22-1-3_UsingLogger/Lesson22/e22-1-3_UsingLogger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson22/e22-2_FactoriesAsSingletons/Lesson22/e22-2_FactoriesAsSingletons.iml" filepath="$PROJECT_DIR$/Lesson22/e22-2_FactoriesAsSingletons/Lesson22/e22-2_FactoriesAsSingletons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson22/e22-3-1_ProjectGlossary/Lesson22/e22-3-1_ProjectGlossary.iml" filepath="$PROJECT_DIR$/Lesson22/e22-3-1_ProjectGlossary/Lesson22/e22-3-1_ProjectGlossary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson22/e22-3-2_Singleton/Lesson22/e22-3-2_Singleton.iml" filepath="$PROJECT_DIR$/Lesson22/e22-3-2_Singleton/Lesson22/e22-3-2_Singleton.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson03/e3-1_TrafficLight/Lesson03/e3-1_TrafficLight.iml" filepath="$PROJECT_DIR$/Lesson03/e3-1_TrafficLight/Lesson03/e3-1_TrafficLight.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson03/e3-2_TrafficLightWithPropertyChangeSupport/Lesson03/e3-2_TrafficLightWithPropertyChangeSupport.iml" filepath="$PROJECT_DIR$/Lesson03/e3-2_TrafficLightWithPropertyChangeSupport/Lesson03/e3-2_TrafficLightWithPropertyChangeSupport.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson03/e3-3_DoctorsWaitingRoom/Lesson03/e3-3_DoctorsWaitingRoom.iml" filepath="$PROJECT_DIR$/Lesson03/e3-3_DoctorsWaitingRoom/Lesson03/e3-3_DoctorsWaitingRoom.iml" />

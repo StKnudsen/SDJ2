@@ -4,12 +4,23 @@ import View.uppercase.UppercaseViewModel;
 
 public class ViewModelFactory
 {
+  static ViewModelFactory instance;
+
+  public static ViewModelFactory getInstance()
+  {
+    if (instance == null)
+    {
+      instance = new ViewModelFactory();
+    }
+    return instance;
+  }
+
   ModelFactory modelFactory;
   UppercaseViewModel uppercaseVM;
 
-  public ViewModelFactory(ModelFactory mf)
+  private ViewModelFactory()
   {
-    modelFactory = mf;
+    modelFactory = ModelFactory.getInstance();
   }
 
   public UppercaseViewModel getUppercaseVM()

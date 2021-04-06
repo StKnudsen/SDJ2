@@ -1,8 +1,8 @@
 package core;
 
 import view.add.AddTaskViewModel;
-import view.all.NextTaskViewModel;
-import view.remove.AllTaskViewModel;
+import view.remove.NextTaskViewModel;
+import view.all.AllTaskViewModel;
 
 public class ViewModelFactory
 {
@@ -16,7 +16,7 @@ public class ViewModelFactory
   {
     this.modelFactory = modelFactory;
     addTaskViewModel = new AddTaskViewModel(modelFactory.getTaskModelManager());
-    allTaskViewModel = new AllTaskViewModel(modelFactory.getTaskModelManager());
+    allTaskViewModel = new AllTaskViewModel(modelFactory.getTaskModelManager(), null);
     nextTaskViewModel = new NextTaskViewModel(modelFactory.getTaskModelManager());
   }
 
