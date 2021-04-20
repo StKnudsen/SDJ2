@@ -45,7 +45,13 @@
       <module fileurl="file://$PROJECT_DIR$/Lesson22/e22-3-1_ProjectGlossary/Lesson22/e22-3-1_ProjectGlossary.iml" filepath="$PROJECT_DIR$/Lesson22/e22-3-1_ProjectGlossary/Lesson22/e22-3-1_ProjectGlossary.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson22/e22-3-2_Singleton/Lesson22/e22-3-2_Singleton.iml" filepath="$PROJECT_DIR$/Lesson22/e22-3-2_Singleton/Lesson22/e22-3-2_Singleton.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson22/e22-3-3_Multiton/Lesson22/e22-3-3_Multiton.iml" filepath="$PROJECT_DIR$/Lesson22/e22-3-3_Multiton/Lesson22/e22-3-3_Multiton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson23/e23-Adapter-1_QueueContainingStrings/Lesson23/e23-Adapter-1_QueueContainingStrings.iml" filepath="$PROJECT_DIR$/Lesson23/e23-Adapter-1_QueueContainingStrings/Lesson23/e23-Adapter-1_QueueContainingStrings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson23/e23-Adapter-2_FileWriter/Lesson23/e23-Adapter-2_FileWriter.iml" filepath="$PROJECT_DIR$/Lesson23/e23-Adapter-2_FileWriter/Lesson23/e23-Adapter-2_FileWriter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson23/e23-Adapter-3_DataBaseStorage/Lesson23/e23-Adapter-3_DataBaseStorage.iml" filepath="$PROJECT_DIR$/Lesson23/e23-Adapter-3_DataBaseStorage/Lesson23/e23-Adapter-3_DataBaseStorage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson23/e23-Proxy-1_Logger/Lesson23/e23-Proxy-1_Logger.iml" filepath="$PROJECT_DIR$/Lesson23/e23-Proxy-1_Logger/Lesson23/e23-Proxy-1_Logger.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson25/e25-3_CookieJar/Lesson25/e25-3_CookieJar.iml" filepath="$PROJECT_DIR$/Lesson25/e25-3_CookieJar/Lesson25/e25-3_CookieJar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson26/e26-1_BadReader/Lesson26/e26-1_BadReader.iml" filepath="$PROJECT_DIR$/Lesson26/e26-1_BadReader/Lesson26/e26-1_BadReader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson26/e26-2_WritersPreference/Lesson26/e26-2_WritersPreference.iml" filepath="$PROJECT_DIR$/Lesson26/e26-2_WritersPreference/Lesson26/e26-2_WritersPreference.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson03/e3-1_TrafficLight/Lesson03/e3-1_TrafficLight.iml" filepath="$PROJECT_DIR$/Lesson03/e3-1_TrafficLight/Lesson03/e3-1_TrafficLight.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson03/e3-2_TrafficLightWithPropertyChangeSupport/Lesson03/e3-2_TrafficLightWithPropertyChangeSupport.iml" filepath="$PROJECT_DIR$/Lesson03/e3-2_TrafficLightWithPropertyChangeSupport/Lesson03/e3-2_TrafficLightWithPropertyChangeSupport.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson03/e3-3_DoctorsWaitingRoom/Lesson03/e3-3_DoctorsWaitingRoom.iml" filepath="$PROJECT_DIR$/Lesson03/e3-3_DoctorsWaitingRoom/Lesson03/e3-3_DoctorsWaitingRoom.iml" />
