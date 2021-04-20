@@ -5,6 +5,7 @@ public class SharedResource
   private int activeWriters = 0;
   private int waitingReaders = 0;
   private int waitingWriters = 0;
+  private static int MAX_READERS = 5;
 
   public void write()
   {
@@ -36,7 +37,9 @@ public class SharedResource
   public synchronized void acquireRead()
   {
     waitingReaders++;
-    while (activeWriters > 0 || waitingWriters > 0)
+    System.out.println(activeReaders);
+
+    while (activeWriters > 0 || waitingWriters > 0)// || activeReaders >= MAX_READERS)
     {
       try
       {
@@ -47,6 +50,7 @@ public class SharedResource
         e.printStackTrace();
       }
     }
+
     waitingReaders--;
     activeReaders++;
   }
