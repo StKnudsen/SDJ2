@@ -1,71 +1,90 @@
-public class SharedResource {
-    private int i;
-    private int activeReaders = 0;
-    private int activeWriters = 0;
-    private int waitingReaders = 0;
+public class SharedResource
+{
+  private int i;
+  private int activeReaders = 0;
+  private int activeWriters = 0;
+  private int waitingReaders = 0;
 
-    public void write() {
-        try {
-            Thread.sleep(200);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        i++;
+  public void write()
+  {
+    try
+    {
+      Thread.sleep(200);
     }
-    private int read() {
-        try {
-            Thread.sleep(500);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        return i;
+    catch (InterruptedException e)
+    {
+      e.printStackTrace();
     }
+    i++;
+  }
 
-    public synchronized void acquireRead()
+  private int read()
+  {
+    try
     {
-        waitingReaders++;
-        while (activeWriters > 0)
-        {
-            try {
-                wait();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-        activeReaders++;
-        waitingReaders--;
+      Thread.sleep(500);
     }
-    public synchronized void releaseRead()
+    catch (InterruptedException e)
     {
-        activeReaders--;
-        if (activeReaders == 0)
-        {
-            notify(); // notify one waiting writer
-        }
+      e.printStackTrace();
     }
-    public synchronized void acquireWrite()
-    {
-        while (activeReaders > 0 || activeWriters > 0 || waitingReaders>0)
-        {
-            try {
-                wait();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-        activeWriters++;
-    }
-    public synchronized void releaseWrite()
-    {
-        activeWriters--;
-        notifyAll(); // notify all waiting readers
-    }
+    return i;
+  }
 
-    public int safeRead()
+  public synchronized void acquireRead()
+  {
+    waitingReaders++;
+    while (activeWriters > 0)
     {
-        acquireRead();
-        int value = read();
-        releaseRead();
-        return value;
+      try
+      {
+        wait();
+      }
+      catch (InterruptedException e)
+      {
+        e.printStackTrace();
+      }
     }
+    activeReaders++;
+    waitingReaders--;
+  }
+
+  public synchronized void releaseRead()
+  {
+    activeReaders--;
+    if (activeReaders == 0)
+    {
+      notify(); // notify one waiting writer
+    }
+  }
+
+  public synchronized void acquireWrite()
+  {
+    while (activeReaders > 0 || activeWriters > 0 || waitingReaders > 0)
+    {
+      try
+      {
+        wait();
+      }
+      catch (InterruptedException e)
+      {
+        e.printStackTrace();
+      }
+    }
+    activeWriters++;
+  }
+
+  public synchronized void releaseWrite()
+  {
+    activeWriters--;
+    notifyAll(); // notify all waiting readers
+  }
+
+  public int safeRead()
+  {
+    acquireRead();
+    int value = read();
+    releaseRead();
+    return value;
+  }
 }
