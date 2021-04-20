@@ -30,6 +30,7 @@ public class SharedResource
     {
       e.printStackTrace();
     }
+    System.out.println("Active Readers: " + activeReaders);
     return i;
   }
 
@@ -37,9 +38,9 @@ public class SharedResource
   public synchronized void acquireRead()
   {
     waitingReaders++;
-    System.out.println(activeReaders);
+    //System.out.println(activeReaders);
 
-    while (activeWriters > 0 || waitingWriters > 0)// || activeReaders >= MAX_READERS)
+    while (activeWriters > 0 || waitingWriters > 0 || activeReaders >= MAX_READERS)
     {
       try
       {
@@ -51,8 +52,8 @@ public class SharedResource
       }
     }
 
-    waitingReaders--;
     activeReaders++;
+    waitingReaders--;
   }
 
   public synchronized void releaseRead()
@@ -60,8 +61,9 @@ public class SharedResource
     activeReaders--;
     if (activeReaders == 0)
     {
-      notify(); // notify one waiting writer
+      notifyAll(); // notify one waiting writer
     }
+    //System.out.println("Release active readers: " + activeReaders);
   }
 
   public synchronized void acquireWrite()

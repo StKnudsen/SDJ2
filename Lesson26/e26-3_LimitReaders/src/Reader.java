@@ -16,9 +16,9 @@ public class Reader implements Runnable
   {
     while (true)
     {
-      resource.acquireRead();
+      //resource.acquireRead();
       System.out.println(name + " read:" + resource.safeRead());
-      resource.releaseRead();
+      //resource.releaseRead();
       try
       {
         Thread.sleep(100 + random.nextInt(100));
