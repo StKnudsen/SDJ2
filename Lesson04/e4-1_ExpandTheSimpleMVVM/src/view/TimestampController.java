@@ -8,8 +8,7 @@ import viewmodel.TimestampViewModel;
 
 public class TimestampController {
 
-    @FXML
-    Label eventLabel;
+    @FXML Label eventLabel;
     @FXML Label numberOfUpdatesLabel;
 
 
