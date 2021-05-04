@@ -88,34 +88,40 @@ public class WaitingRoom
     }
     if (pet.getSpecies().equals("kat") && hamsters > 0)
     {
-      System.out.println("-X-  Ingen katte - der er en hamster til stede!");
+      System.out.println("-X-  Ingen katte - der er en hamster til stede! " +
+          pet.getName() + " må vente udenfor!");
       return true;
     }
     if (pet.getSpecies().equals("hamster") && cats > 0)
     {
-      System.out.println("-X-  Ingen hamstere - der er en kat til stede!");
+      System.out.println("-X-  Ingen hamstere - der er en kat til stede! " +
+          pet.getName() + " må vente udenfor!");
       return true;
     }
     //Hvis der er mere end 2 hunde må der ikke være katte
     if (pet.getSpecies().equals("kat") && dogs > 2)
     {
-      System.out.println("-X-  Ingen katte - der er mere end to hunde!");
+      System.out.println("-X-  Ingen katte - der er mere end to hunde! " +
+          pet.getName() + " må vente udenfor!");
       return true;
     }
     if (pet.getSpecies().equals("hund") && cats > 2)
     {
-      System.out.println("-X-  Ingen hunde - der er mere end to katte!");
+      System.out.println("-X-  Ingen hunde - der er mere end to katte! " +
+          pet.getName() + " må vente udenfor!");
       return true;
     }
     //Hvis der er mere end 2 katte må der ikke være hunde
     if (pet.getSpecies().equals("kat") && cats >= 2 && dogs > 0)
     {
-      System.out.println("-X-  Der må ikke være flere katte i rummet!");
+      System.out.println("-X-  Der må ikke være flere katte i rummet!" +
+          pet.getName() + " må vente udenfor!");
       return true;
     }
     if (pet.getSpecies().equals("hund") && dogs >= 2 && cats > 0)
     {
-      System.out.println("-X-  Der må ikke være flere hunde i rummet!");
+      System.out.println("-X-  Der må ikke være flere hunde i rummet!" +
+          pet.getName() + " må vente udenfor!");
       return true;
     }
     return false;

@@ -3,14 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/SDJ2.iml" filepath="$PROJECT_DIR$/.idea/SDJ2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Lesson01/e1-1_PrintLettersAndNumbers/Lesson01/e1-1_PrintLettersAndNumbers.iml" filepath="$PROJECT_DIR$/Lesson01/e1-1_PrintLettersAndNumbers/Lesson01/e1-1_PrintLettersAndNumbers.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Lesson01/e1-2_RunInsteadOfStart/Lesson01/e1-2_RunInsteadOfStart.iml" filepath="$PROJECT_DIR$/Lesson01/e1-2_RunInsteadOfStart/Lesson01/e1-2_RunInsteadOfStart.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Lesson01/e1-3_Constructors/Lesson01/e1-3_Constructors.iml" filepath="$PROJECT_DIR$/Lesson01/e1-3_Constructors/Lesson01/e1-3_Constructors.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Lesson01/e1-4_Sleep/Lesson01/e1-4_Sleep.iml" filepath="$PROJECT_DIR$/Lesson01/e1-4_Sleep/Lesson01/e1-4_Sleep.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Lesson01/e1-5_ThreadSerializationUsingJoin/Lesson01/e1-5_ThreadSerializationUsingJoin.iml" filepath="$PROJECT_DIR$/Lesson01/e1-5_ThreadSerializationUsingJoin/Lesson01/e1-5_ThreadSerializationUsingJoin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Lesson01/e1-6_SleepingBear/Lesson01/e1-6_SleepingBear.iml" filepath="$PROJECT_DIR$/Lesson01/e1-6_SleepingBear/Lesson01/e1-6_SleepingBear.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Lesson01/e1-7_UpdatingASharedNumber/Lesson01/e1-7_UpdatingASharedNumber.iml" filepath="$PROJECT_DIR$/Lesson01/e1-7_UpdatingASharedNumber/Lesson01/e1-7_UpdatingASharedNumber.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Lesson01/e1-9_RabbitAndTurtle/Lesson01/e1-9_RabbitAndTurtle.iml" filepath="$PROJECT_DIR$/Lesson01/e1-9_RabbitAndTurtle/Lesson01/e1-9_RabbitAndTurtle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson01_Threads/e1-1_PrintLettersAndNumbers/Lesson01/e1-1_PrintLettersAndNumbers.iml" filepath="$PROJECT_DIR$/Lesson01_Threads/e1-1_PrintLettersAndNumbers/Lesson01/e1-1_PrintLettersAndNumbers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson01_Threads/e1-2_RunInsteadOfStart/Lesson01/e1-2_RunInsteadOfStart.iml" filepath="$PROJECT_DIR$/Lesson01_Threads/e1-2_RunInsteadOfStart/Lesson01/e1-2_RunInsteadOfStart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson01_Threads/e1-3_Constructors/Lesson01/e1-3_Constructors.iml" filepath="$PROJECT_DIR$/Lesson01_Threads/e1-3_Constructors/Lesson01/e1-3_Constructors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson01_Threads/e1-4_Sleep/Lesson01/e1-4_Sleep.iml" filepath="$PROJECT_DIR$/Lesson01_Threads/e1-4_Sleep/Lesson01/e1-4_Sleep.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson01_Threads/e1-5_ThreadSerializationUsingJoin/Lesson01/e1-5_ThreadSerializationUsingJoin.iml" filepath="$PROJECT_DIR$/Lesson01_Threads/e1-5_ThreadSerializationUsingJoin/Lesson01/e1-5_ThreadSerializationUsingJoin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson01_Threads/e1-6_SleepingBear/Lesson01/e1-6_SleepingBear.iml" filepath="$PROJECT_DIR$/Lesson01_Threads/e1-6_SleepingBear/Lesson01/e1-6_SleepingBear.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson01_Threads/e1-7_UpdatingASharedNumber/Lesson01/e1-7_UpdatingASharedNumber.iml" filepath="$PROJECT_DIR$/Lesson01_Threads/e1-7_UpdatingASharedNumber/Lesson01/e1-7_UpdatingASharedNumber.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson01_Threads/e1-9_RabbitAndTurtle/Lesson01/e1-9_RabbitAndTurtle.iml" filepath="$PROJECT_DIR$/Lesson01_Threads/e1-9_RabbitAndTurtle/Lesson01/e1-9_RabbitAndTurtle.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson10/e10-1a_Server/Lesson10/e10-1a_Server.iml" filepath="$PROJECT_DIR$/Lesson10/e10-1a_Server/Lesson10/e10-1a_Server.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson10/e10-1b_Client/Lesson10/e10-1b_Client.iml" filepath="$PROJECT_DIR$/Lesson10/e10-1b_Client/Lesson10/e10-1b_Client.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson10/e10-2_Server/Lesson10/e10-2_Server.iml" filepath="$PROJECT_DIR$/Lesson10/e10-2_Server/Lesson10/e10-2_Server.iml" />
