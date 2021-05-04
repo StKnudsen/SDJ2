@@ -2,11 +2,10 @@
 <module type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../e31-1-1_SocketsLayer">
-      <sourceFolder url="file://$MODULE_DIR$/../../e31-1-1_SocketsLayer/src" isTestSource="false" />
+    <content url="file://$MODULE_DIR$/../../../Lesson31_Repetition/e31-2_BoundedList_ProxyPattern">
+      <sourceFolder url="file://$MODULE_DIR$/../../../Lesson31_Repetition/e31-2_BoundedList_ProxyPattern/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="lib10" level="project" />
   </component>
 </module>
